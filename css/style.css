@@ -4,16 +4,27 @@
   box-sizing: border-box;
 }
 
+
+
+
+
 .contenitore{
+
 }
 
 .contenitore .citta{
-  height: 33.33vh;
-  width: 100%;
+  height: 200px;
+  width: 100vw;
   position: relative;
   margin: 0 auto;
+
 }
 
+.contenitore .citta .box{
+  background-color: rgba(21, 23, 20, 0.37);
+  height: 100%;
+  width: 100%;
+}
 
 .contenitore .citta .box h2{
   text-transform: uppercase;
@@ -23,12 +34,24 @@
   transform: translate(-50%, -50%);
   color: white;
   text-shadow: 4px 4px rgb(176, 184, 179);
+
 }
 
 .citta .box.photo{
   height: 100%;
   background-size: cover;
   background-position: center;
+
+}
+
+.box.photo .layover{
+  background-color: rgba(31, 36, 35, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.box:hover .layover{
+  display: none;
 }
 
 #roma{
