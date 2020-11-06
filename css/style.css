@@ -5,15 +5,35 @@
 }
 
 
+nav{
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
 
-
-
-.contenitore{
+#logo{
+  width: 90px;
+  vertical-align: middle;
+  position: absolute;
+  top: 10px;
+  left: 5px;
 
 }
 
+
+li{
+  list-style: none;
+  display: inline-block;
+  line-height: 80px;
+  padding: 0 20px;
+}
+
+.contenitore{
+  margin-top: 10px;
+}
+
 .contenitore .citta{
-  height: 200px;
+  height: 33.33vh;
   width: 100vw;
   position: relative;
   margin: 0 auto;
