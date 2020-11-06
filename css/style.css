@@ -4,11 +4,27 @@
   box-sizing: border-box;
 }
 
+.navbar{
+  background-color: white;
+  height: 80px;
+  width: 100vw;
+  z-index: 1;
+  position: fixed;
+}
 
 nav{
   height: 80px;
   width: 100%;
   text-align: center;
+  z-index: 1;
+  position: fixed;
+  /* top: 0; */
+}
+
+ul.menu{
+  color: rgba(255, 62, 75, 0.65);
+  background-color: rgba(255, 62, 75, 0.33);
+  text-transform: capitalize;
 }
 
 #logo{
@@ -17,23 +33,30 @@ nav{
   position: absolute;
   top: 10px;
   left: 5px;
-
+  cursor: default;
 }
-
 
 li{
   list-style: none;
   display: inline-block;
   line-height: 80px;
   padding: 0 20px;
+  font-family: monospace;
+}
+
+li:hover {
+  color: rgb(255, 62, 75);
+  cursor: pointer;
+  background-color: rgba(255, 62, 75, 0.37);
+  font-family: none;
 }
 
 .contenitore{
-  margin-top: 10px;
+  padding-top: 80px;
 }
 
 .contenitore .citta{
-  height: 33.33vh;
+  height: 40vh;
   width: 100vw;
   position: relative;
   margin: 0 auto;
@@ -42,7 +65,6 @@ li{
 
 .contenitore .citta .box{
   background-color: rgba(21, 23, 20, 0.37);
-  height: 100%;
   width: 100%;
 }
 
@@ -73,6 +95,18 @@ li{
 .box:hover .layover{
   display: none;
 }
+
+.box:hover, li:hover .box.photo{
+  color: green;
+}
+
+h2:hover{
+  cursor: default;
+}
+
+/* li:hover .layover{
+  display: none;
+} */
 
 #roma{
   background-image: url('https://www.itinerarinellarte.it/pics/colosseo.jpg');
