@@ -6,19 +6,21 @@
 
 .contenitore{
   height: 700px;
-  width: 400px;
+  width: 500px;
   background-color: yellow;
-  position: relative;
 }
 
 .contenitore .citta{
   height: 200px;
   width: 80%;
-  background-color: green;
+  /* background-color: green; */
   border: 1px solid red;
-  position: absolute;
-  left: 50%;
-  top: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.contenitore .citta .roma img{
+  width: 100%;
 }
 
 .contenitore .citta .roma p{
@@ -27,5 +29,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
