@@ -5,18 +5,15 @@
 }
 
 .contenitore{
-  height: 700px;
-  width: 500px;
-  background-color: yellow;
 }
 
 .contenitore .citta{
-  height: 200px;
-  width: 80%;
-  border: 1px solid red;
+  height: 33.33vh;
+  width: 100%;
   position: relative;
   margin: 0 auto;
 }
+
 
 .contenitore .citta .box h2{
   text-transform: uppercase;
@@ -28,23 +25,20 @@
   text-shadow: 4px 4px rgb(176, 184, 179);
 }
 
-#roma{
-  background-image: url('https://www.itinerarinellarte.it/pics/colosseo.jpg');
+.citta .box.photo{
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+
+#roma{
+  background-image: url('https://www.itinerarinellarte.it/pics/colosseo.jpg');
 }
 
 #milano{
   background-image: url('https://a.mytrend.it/prp/2019/06/791946/o.517066.jpg');
-  height: 100%;
-  background-size: cover;
-  background-position: center;
 }
 
 #napoli{
   background-image: url('https://www.eurospin-viaggi.it/media/immagini/36048_n_Napoli_1.jpg');
-  height: 100%;
-  background-size: cover;
-  background-position: center;
 }
