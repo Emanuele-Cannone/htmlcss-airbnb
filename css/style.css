@@ -37,18 +37,26 @@ ul.menu{
 
 .menu li{
   list-style: none;
-  display: inline-block;
   line-height: 80px;
+}
+
+ul.menu li:hover .layover{
+  display: none;
+}
+
+.menu li, .terms li{
+  display: inline-block;
   padding: 0 20px;
   font-family: monospace;
 }
 
-li:hover {
+ul.menu li:hover {
   color: rgb(255, 62, 75);
   cursor: pointer;
   background-color: rgba(255, 62, 75, 0.37);
   font-family: none;
 }
+
 
   /* fine header */
 
@@ -76,15 +84,23 @@ li:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  text-shadow: 4px 4px rgb(176, 184, 179);
-
+  text-shadow: 5px 3px rgba(255, 62, 75, 0.6);
 }
 
 .citta .box.photo{
   height: 100%;
   background-size: cover;
   background-position: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 
+.citta:first-child .box.photo{
+  border-top: none;
+}
+
+.citta:last-child .box.photo{
+  border-bottom: none;
 }
 
 .box.photo .layover{
@@ -97,8 +113,10 @@ li:hover {
   display: none;
 }
 
-.box:hover, li:hover .box.photo{
-  color: green;
+.box.photo:hover h2{
+  text-shadow: none;
+  font-size: 50px;
+
 }
 
 h2:hover{
@@ -115,4 +133,35 @@ h2:hover{
 
 #napoli{
   background-image: url('https://www.eurospin-viaggi.it/media/immagini/36048_n_Napoli_1.jpg');
+}
+
+#firenze{
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/29/21/06/florence-1289364__340.jpg');
+}
+
+/* footer */
+
+
+footer{
+  background-color: rgba(255, 62, 75, 0.33);
+  height: 31px;
+  width: 100vw;
+  text-align: center;
+  border: 1px solid #ff3e4b;
+}
+
+.terms li{
+  cursor: pointer;
+  color: rgb(255, 62, 75);
+  text-transform: capitalize;
+  line-height: 30px;
+}
+
+.terms li:first-child{
+  cursor: default;
+  text-transform: lowercase;
+}
+
+#registered{
+  font-size: 12px;
 }
